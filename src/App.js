@@ -12,23 +12,23 @@ export default function App() {
        
       </header>
       <footer>
-      This project was coded by Olena Berezina and is open-sourced on 
+      This project was coded by Olena Berezina and is open-sourced on  {" "}  
          <a
           className="App-link"
-          href="#"
+          href="https://github.com/farfalina1908/weather-react-app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          GitHub 
+         GitHub 
         </a>
-        and hosted on 
+        {" "}  and hosted on  {" "}  
         <a
           className="App-link"
-          href="#"
+          href="https://github.com/farfalina1908/weather-react-app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Netlify
+         Netlify 
         </a>
       </footer>
     </div>

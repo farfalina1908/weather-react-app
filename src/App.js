@@ -13,7 +13,7 @@ export default function App() {
         <h1>
          Weather react app
         </h1>
-      <Weather/>
+      <Weather defaultCity="New York"/>
       </header>
       <footer>
       This project was coded by Olena Berezina and is open-sourced on  {" "}  

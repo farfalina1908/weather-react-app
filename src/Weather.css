@@ -26,6 +26,9 @@ line-height: 29px;
     line-height: 19px;
     list-style: none;
     }
+    .Weather a:link {
+        text-decoration: none;
+      }
 
     .Weather canvas {
         /* height: 64px;

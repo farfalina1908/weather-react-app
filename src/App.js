@@ -8,14 +8,9 @@ export default function App() {
      <div className="container">
       <header className="App-header">
 
-      
-        
-        <h1>
-         Weather react app
-        </h1>
       <Weather defaultCity="New York"/>
       </header>
-      <footer>
+      {/* <footer>
       This project was coded by Olena Berezina and is open-sourced on  {" "}  
          <a
           className="App-link"
@@ -34,7 +29,7 @@ export default function App() {
         >
          Netlify 
         </a>
-      </footer>
+      </footer> */}
       </div>
     </div>
   );

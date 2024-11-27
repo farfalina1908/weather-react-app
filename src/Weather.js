@@ -49,9 +49,9 @@ export default function Weather (props) {
         <form onSubmit={handleSubmit}>
         <div className="row">
              <div className="col-9">
-                 <input type="search" placeholder="Enter a city..." className="form-control" autoFocus="on" onChange={handleCityChange}/>
+                 <input type="search" placeholder="Enter a city..." className="form-control search-input" autoFocus="on" onChange={handleCityChange}/>
              </div>
-            <div className="col-3">
+            <div className="col-3 p-0">
             <input type="submit" value="Search" className="btn btn-primary w-100"/>
             </div>
            
@@ -60,6 +60,26 @@ export default function Weather (props) {
         </form>
         <WeatherInfo data={weatherData}/>
         <WeatherForecast coordinates={weatherData.coordinates}/>
+        <footer>
+      This project was coded by Olena Berezina and is open-sourced on  {" "}  
+         <a
+          className="App-link"
+          href="https://github.com/farfalina1908/weather-react-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+         GitHub 
+        </a>
+        {" "}  and hosted on  {" "}  
+        <a
+          className="App-link"
+          href="https://enchanting-dango-f50e89.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+         Netlify 
+        </a>
+      </footer>
        
     </div>) ;
     } else {

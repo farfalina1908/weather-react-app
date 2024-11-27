@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import WeatherIcon from "./WeatherIcon";
+
 import WeatherForecastDay from "./WeatherForecastDay"
 import axios from "axios";
 import "./WeatherForecast.css"
@@ -30,7 +30,9 @@ if(loaded)
                 return (
             <div className="col" key={index}>
                 <WeatherForecastDay data={dailyForecast}/>
-            </div>)}
+            </div>)} else {
+                return null;
+            }
 
             })  }
             

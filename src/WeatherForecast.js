@@ -19,6 +19,17 @@ useEffect(()=>{
         setForecast(response.data.daily);
       }
 
+      function load() {
+        let apiKey="08d440tdfdcb031ao9979a9366c66028";
+        let longitude = props.coordinates.lon;
+        let latitude = props.coordinates.lat;
+        let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=metric`;
+    // `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}appid=${apiKey}&units=metric`;
+  
+        axios.get(apiUrl).then(handleResponse);
+        
+      }
+
 if(loaded) 
 {
     console.log(forecast);
@@ -42,17 +53,11 @@ if(loaded)
 
     
 } else {
-   
-    let apiKey="08d440tdfdcb031ao9979a9366c66028";
-    
-    let longitude = props.coordinates.lon;
-    let latitude = props.coordinates.lat;
-   
-    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=metric`;
-    // `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}appid=${apiKey}&units=metric`;
-  
-    axios.get(apiUrl).then(handleResponse);
+
+    load();
     return null;
+   
+    
 }
 
    
